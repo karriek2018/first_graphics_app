@@ -26,7 +26,6 @@ function createChart(x, y, element, title) {
 }];
 
 var layout = {
-
 title: title,
 xaxis: {
   title: 'Year',
@@ -54,5 +53,5 @@ Plotly.newPlot(element, settings, layout);
 var countyChartTitle = "<b>County Homicides, 2000-2017</b>";
 var hpChartTitle = "<b>Harvard Park Homicides, 2000-2017</b>";
 
-createChart(years, countyHomicides, 'county-homicides');
-createChart(years, harvardParkHomicides, 'harvard-park-homicides');
+createChart(years, countyHomicides, 'county-homicides', countyChartTitle);
+createChart(years, harvardParkHomicides, 'harvard-park-homicides', hpChartTitle);
