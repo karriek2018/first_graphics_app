@@ -11,6 +11,6 @@
 
 {% block content %}
 {% for obj in site.data.harvard_park_homicides %}
-  {{ obj.last_name }}<br>
+  {{ obj.first_name }} {{obj.last_name }}<br>
 {% endfor %}
 {% endblock %}
